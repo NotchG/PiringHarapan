@@ -12,4 +12,3 @@ class StaffDataModel {
         staffLocation = json['staff_location'] as String,
         staffProfilePicture = json['staff_profile_picture'] as String;
 }
-

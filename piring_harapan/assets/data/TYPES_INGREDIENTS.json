@@ -1,0 +1,703 @@
+[
+    {
+        "food_id": "FD0001",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 1",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin B",
+            "Fiber"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0002",
+        "category": "Oils & Fats",
+        "food_name": "Food 2",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Calcium",
+            "Iron",
+            "Vitamin A"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0003",
+        "category": "Animal Protein",
+        "food_name": "Food 3",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Calcium",
+            "Fat",
+            "Vitamin A",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0004",
+        "category": "Oils & Fats",
+        "food_name": "Food 4",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin C",
+            "Carbohydrate"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0005",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 5",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin B",
+            "Protein",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0006",
+        "category": "Oils & Fats",
+        "food_name": "Food 6",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Omega-3",
+            "Vitamin B",
+            "Carbohydrate"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0007",
+        "category": "Animal Protein",
+        "food_name": "Food 7",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Calcium",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0008",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 8",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fat",
+            "Vitamin B",
+            "Carbohydrate"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0009",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 9",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Omega-3",
+            "Fat",
+            "Iron"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0010",
+        "category": "Oils & Fats",
+        "food_name": "Food 10",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin A",
+            "Vitamin B",
+            "Fat",
+            "Fiber"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0011",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 11",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0012",
+        "category": "Spices & Seasonings",
+        "food_name": "Food 12",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin A",
+            "Vitamin C",
+            "Omega-3",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0013",
+        "category": "Oils & Fats",
+        "food_name": "Food 13",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin B",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0014",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 14",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0015",
+        "category": "Staple Food",
+        "food_name": "Food 15",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Omega-3",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0016",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 16",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Protein",
+            "Fiber"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0017",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 17",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Calcium",
+            "Protein",
+            "Iron"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0018",
+        "category": "Oils & Fats",
+        "food_name": "Food 18",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fiber",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0019",
+        "category": "Animal Protein",
+        "food_name": "Food 19",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin B",
+            "Iron",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0020",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 20",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin B",
+            "Vitamin C",
+            "Vitamin A"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0021",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 21",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Protein",
+            "Fiber",
+            "Omega-3",
+            "Carbohydrate"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0022",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 22",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Calcium"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0023",
+        "category": "Spices & Seasonings",
+        "food_name": "Food 23",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Protein",
+            "Fiber",
+            "Vitamin A"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0024",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 24",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Fiber",
+            "Vitamin A",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0025",
+        "category": "Spices & Seasonings",
+        "food_name": "Food 25",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Vitamin B",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0026",
+        "category": "Animal Protein",
+        "food_name": "Food 26",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin A",
+            "Carbohydrate",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0027",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 27",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Calcium",
+            "Vitamin A",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0028",
+        "category": "Spices & Seasonings",
+        "food_name": "Food 28",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin A",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0029",
+        "category": "Spices & Seasonings",
+        "food_name": "Food 29",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin A",
+            "Carbohydrate",
+            "Iron",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0030",
+        "category": "Staple Food",
+        "food_name": "Food 30",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Protein",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0031",
+        "category": "Animal Protein",
+        "food_name": "Food 31",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Fiber",
+            "Fat",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0032",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 32",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Omega-3",
+            "Vitamin A",
+            "Protein"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0033",
+        "category": "Animal Protein",
+        "food_name": "Food 33",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Protein",
+            "Calcium",
+            "Vitamin C",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0034",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 34",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Fat",
+            "Iron",
+            "Calcium"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0035",
+        "category": "Oils & Fats",
+        "food_name": "Food 35",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Protein",
+            "Fat",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0036",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 36",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fiber",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0037",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 37",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Calcium",
+            "Iron",
+            "Vitamin A",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0038",
+        "category": "Staple Food",
+        "food_name": "Food 38",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Fiber",
+            "Vitamin B",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0039",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 39",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin C",
+            "Vitamin A",
+            "Omega-3",
+            "Fat"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Imported",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0040",
+        "category": "Staple Food",
+        "food_name": "Food 40",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin C",
+            "Carbohydrate",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0041",
+        "category": "Animal Protein",
+        "food_name": "Food 41",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Carbohydrate",
+            "Protein",
+            "Fiber"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0042",
+        "category": "Oils & Fats",
+        "food_name": "Food 42",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fat",
+            "Vitamin A",
+            "Vitamin C"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0043",
+        "category": "Animal Protein",
+        "food_name": "Food 43",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Protein"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Dessert"
+    },
+    {
+        "food_id": "FD0044",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 44",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fat",
+            "Calcium",
+            "Vitamin B"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Organic Supplier",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0045",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 45",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Calcium",
+            "Vitamin B",
+            "Iron",
+            "Carbohydrate"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Supermarket",
+        "MBG_menu": "Breakfast"
+    },
+    {
+        "food_id": "FD0046",
+        "category": "Oils & Fats",
+        "food_name": "Food 46",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Vitamin C",
+            "Fiber",
+            "Vitamin A"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Snack"
+    },
+    {
+        "food_id": "FD0047",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 47",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Iron",
+            "Omega-3"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0048",
+        "category": "Vegetables & Fruit",
+        "food_name": "Food 48",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fat",
+            "Omega-3",
+            "Carbohydrate"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Dinner"
+    },
+    {
+        "food_id": "FD0049",
+        "category": "Plant-Based Protein",
+        "food_name": "Food 49",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fiber",
+            "Fat",
+            "Protein"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Local Farm",
+        "MBG_menu": "Lunch"
+    },
+    {
+        "food_id": "FD0050",
+        "category": "Oils & Fats",
+        "food_name": "Food 50",
+        "description": "This is a sample description for a food item.",
+        "nutrition": [
+            "Fat",
+            "Fiber"
+        ],
+        "image_url": "https://dummyimage.com/200x200.png/5fa2dd/ffffff",
+        "source_of_supply": "Direct from Farmers",
+        "MBG_menu": "Lunch"
+    }
+]
