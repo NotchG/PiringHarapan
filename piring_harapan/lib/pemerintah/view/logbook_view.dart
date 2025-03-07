@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
 import 'package:piring_harapan/pemerintah/view/staff_data_view.dart';
 import 'package:piring_harapan/pemerintah/view/ingredients_data_view.dart';
+import 'package:piring_harapan/pemerintah/view/program_finance_screen.dart';
 
 class LogbookView extends StatelessWidget {
   const LogbookView({super.key});
@@ -43,7 +44,14 @@ class LogbookView extends StatelessWidget {
                   }),
               CommonListButton(text: "Menu", onClick: () {}),
               CommonListButton(text: "Review", onClick: () {}),
-              CommonListButton(text: "Programs Finance", onClick: () {}),
+              CommonListButton(
+                  text: "Programs Finance",
+                  onClick: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProgramFinanceScreen()));
+                  }),
             ],
           ),
         ),
