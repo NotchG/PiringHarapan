@@ -33,11 +33,14 @@ class HeaderNavigation extends StatelessWidget {
           SizedBox(
             width: 20,
           ),
-          Text(
-            text,
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 20,
+          Expanded(
+            child: Text(
+              text,
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 20,
+                overflow: TextOverflow.ellipsis
+              ),
             ),
           ),
         ],
