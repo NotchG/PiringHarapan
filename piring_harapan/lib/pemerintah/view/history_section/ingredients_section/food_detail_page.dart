@@ -17,20 +17,39 @@ class FoodDetailPage extends StatelessWidget {
               // Gambar utama
               Stack(
                 children: [
-                  Image.network(
-                    foodData.imageUrl,
+                  Container(
                     width: double.infinity,
                     height: 250,
-                    fit: BoxFit.cover,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage(foodData.imageUrl,),
+                        fit: BoxFit.cover
+                      ),
+                      borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
+                    ),
                   ),
                   Positioned(
                     top: 20,
-                    left: 10,
-                    child: IconButton(
-                      icon: Icon(Icons.arrow_back, color: Colors.white),
-                      onPressed: () {
+                    left: 20,
+                    child: InkWell(
+                      onTap: () {
                         Navigator.pop(context);
                       },
+                      child: Container(
+                        padding: EdgeInsets.all(7.0),
+                        decoration: BoxDecoration(
+                            border: Border.all(
+                                color: Color(0xff91C077)
+                            ),
+                            borderRadius: BorderRadius.circular(5),
+                          color: Colors.white
+                        ),
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: Color(0xff91C077),
+                          size: 20,
+                        ),
+                      ),
                     ),
                   ),
                 ],

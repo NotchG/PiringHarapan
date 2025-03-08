@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   go_router: ^14.8.1
+  intl: ^0.20.2
+  fl_chart: ^0.70.2
+  easy_animated_indexed_stack: ^0.0.3
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +67,7 @@ flutter:
     - assets/data/STAFF_DATA.json
     - assets/data/TYPES_INGREDIENTS.json
     - assets/data/FINANCIAL_PROGRAM.json
+    - assets/data/REVIEW_DATA.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

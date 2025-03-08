@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/model/types_ingredients_model.dart';
-import 'package:piring_harapan/pemerintah/view/food_detail_page.dart'; // Import halaman detail
+import 'package:piring_harapan/pemerintah/view/history_section/ingredients_section/food_detail_page.dart'; // Import halaman detail
 
 class FoodCard extends StatelessWidget {
   final TypesIngredientsModel foodData;
@@ -73,6 +73,7 @@ class FoodCard extends StatelessWidget {
                   // Nutrition Tags
                   Wrap(
                     spacing: 8,
+                    runSpacing: 8,
                     children: foodData.nutrition.map((nutrient) {
                       return Container(
                         padding:

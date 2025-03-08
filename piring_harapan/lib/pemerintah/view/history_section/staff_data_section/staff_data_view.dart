@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
-import 'package:piring_harapan/pemerintah/view/staff_data_details_view.dart';
+import 'package:piring_harapan/pemerintah/view/history_section/staff_data_section/staff_data_details_view.dart';
 
-import 'components/common_list_button.dart';
+import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
 
 class StaffDataView extends StatelessWidget {
   const StaffDataView({super.key});

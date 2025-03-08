@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
-import 'package:piring_harapan/pemerintah/view/ingredients_fee_screen.dart';
+import 'package:piring_harapan/pemerintah/view/history_section/programs_finance_section/ingredients_fee_screen.dart';
 
 class ProgramFinanceScreen extends StatelessWidget {
   const ProgramFinanceScreen({super.key});
@@ -11,7 +11,7 @@ class ProgramFinanceScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.only(left: 20, right: 20, top: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [

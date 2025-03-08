@@ -3,7 +3,7 @@ import 'package:piring_harapan/pemerintah/controller/staff_data_details_controll
 import 'package:piring_harapan/pemerintah/view/components/staff_card.dart';
 import 'package:piring_harapan/pemerintah/view/components/text_search_bar.dart';
 
-import 'components/header_navigation.dart';
+import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
 
 class StaffDataDetailsView extends StatefulWidget {
   /// GroupID

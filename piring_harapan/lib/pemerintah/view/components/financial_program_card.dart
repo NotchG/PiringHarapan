@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/model/financial_program_model.dart';
-import 'package:piring_harapan/pemerintah/view/orders_detail_screen.dart';
+import 'package:piring_harapan/pemerintah/view/history_section/programs_finance_section/orders_detail_screen.dart';
 
 class FinancialProgramCard extends StatelessWidget {
   final FinancialProgramModel financialProgram;

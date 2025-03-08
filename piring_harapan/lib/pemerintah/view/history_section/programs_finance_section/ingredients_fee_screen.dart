@@ -2,41 +2,37 @@ import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
 import 'package:piring_harapan/pemerintah/view/components/text_search_bar.dart';
-import 'package:piring_harapan/pemerintah/view/ingredients_fee_item_screen.dart';
+import 'ingredients_fee_detail_screen.dart';
 
-class IngredientsFeeDetailScreen extends StatefulWidget {
-  final String schoolName;
-
-  const IngredientsFeeDetailScreen({super.key, required this.schoolName});
+class IngredientsFeeScreen extends StatefulWidget {
+  const IngredientsFeeScreen({super.key});
 
   @override
-  State<IngredientsFeeDetailScreen> createState() =>
-      _IngredientsFeeDetailScreenState();
+  State<IngredientsFeeScreen> createState() => _IngredientsFeeScreenState();
 }
 
-class _IngredientsFeeDetailScreenState
-    extends State<IngredientsFeeDetailScreen> {
-  List<String> dates = [
-    "6 January 2025",
-    "7 January 2025",
-    "8 January 2025",
-    "9 January 2025",
-    "10 January 2025",
-    "11 January 2025",
+class _IngredientsFeeScreenState extends State<IngredientsFeeScreen> {
+  List<String> schools = [
+    "SDN Harapan Jaya",
+    "SD Pelita Bangsa",
+    "SD Tunas Ilmu",
+    "SD Alam Sejahtera",
+    "SMP Nusantara 1",
+    "SMP Bhakti Luhur"
   ];
 
-  List<String> filteredDates = [];
+  List<String> filteredSchools = [];
 
   @override
   void initState() {
     super.initState();
-    filteredDates = dates;
+    filteredSchools = schools;
   }
 
   void filterSearch(String query) {
     setState(() {
-      filteredDates = dates
-          .where((date) => date.toLowerCase().contains(query.toLowerCase()))
+      filteredSchools = schools
+          .where((school) => school.toLowerCase().contains(query.toLowerCase()))
           .toList();
     });
   }
@@ -46,37 +42,36 @@ class _IngredientsFeeDetailScreenState
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.only(left: 20, right: 20, top: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HeaderNavigation(text: "Ingredients Fee"),
+              HeaderNavigation(text: "Program Finance"),
               Text(
-                widget.schoolName,
+                "Ingredients Fee",
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               SizedBox(height: 10),
               TextSearchBar(
-                hintText: "Search the Date",
+                hintText: "Search the School Name",
                 onChanged: filterSearch,
               ),
               SizedBox(height: 20),
               Expanded(
                 child: ListView.builder(
-                  itemCount: filteredDates.length,
+                  itemCount: filteredSchools.length,
                   itemBuilder: (context, index) {
                     return CommonListButton(
-                      text: filteredDates[index],
+                      text: filteredSchools[index],
                       onClick: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => IngredientsFeeItemScreen(
-                              schoolName: widget.schoolName,
-                              date: filteredDates[index],
+                            builder: (context) => IngredientsFeeDetailScreen(
+                              schoolName: filteredSchools[index],
                             ),
                           ),
                         );

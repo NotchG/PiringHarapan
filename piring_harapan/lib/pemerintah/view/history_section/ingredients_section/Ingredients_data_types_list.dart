@@ -3,7 +3,7 @@ import 'package:piring_harapan/pemerintah/controller/types_ingredients_controlle
 import 'package:piring_harapan/pemerintah/view/components/food_card.dart';
 import 'package:piring_harapan/pemerintah/view/components/text_search_bar.dart';
 
-import 'components/header_navigation.dart';
+import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
 
 class IngredientsDataTypesDetailsView extends StatefulWidget {
   final String category;

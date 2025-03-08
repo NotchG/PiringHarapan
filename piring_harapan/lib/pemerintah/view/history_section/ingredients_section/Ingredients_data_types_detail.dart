@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
-import 'package:piring_harapan/pemerintah/view/Ingredients_data_types_list.dart';
+import 'package:piring_harapan/pemerintah/view/history_section/ingredients_section/Ingredients_data_types_list.dart';
 
 class IngredientsDataTypesDetail extends StatelessWidget {
   const IngredientsDataTypesDetail({super.key});

@@ -6,7 +6,7 @@ import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart
 import 'package:piring_harapan/pemerintah/view/components/text_search_bar.dart';
 import 'package:piring_harapan/pemerintah/view/components/financial_program_card.dart';
 import 'package:piring_harapan/pemerintah/model/financial_program_model.dart';
-import 'package:piring_harapan/pemerintah/view/orders_detail_screen.dart';
+import 'package:piring_harapan/pemerintah/view/history_section/programs_finance_section/orders_detail_screen.dart';
 
 class IngredientsFeeItemScreen extends StatefulWidget {
   final String schoolName;
