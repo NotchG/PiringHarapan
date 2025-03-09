@@ -70,16 +70,7 @@ flutter:
     - assets/data/FINANCIAL_PROGRAM.json
     - assets/data/REVIEW_DATA.json
     - assets/data/USERS_DATA.json
-    - assets/img/logo.png
-    - assets/img/bakwan.png
-    - assets/img/kangkung.png
-    - assets/img/lontong sayur.png
-    - assets/img/gilang amarah.png
-    - assets/img/ayam_panggang.png
-    - assets/img/buncis.png
-    - assets/img/robot.png
-    - assets/img/angga_hamzah.png
-    - assets/img/bca.png
+    - assets/img/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
