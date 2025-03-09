@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:piring_harapan/pemerintah/view/main_pemerintah_view.dart';
 import 'package:piring_harapan/tukang_masak/main_tukang_masak_view.dart';
 import 'package:piring_harapan/login_page/register_page.dart';
+import 'package:piring_harapan/petani/main_petani_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,7 +11,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: _buildTheme(),
-    home: MainTukangMasakView(),
+    home: MainPetaniView(),
   ));
 }
 

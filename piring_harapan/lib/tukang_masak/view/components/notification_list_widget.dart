@@ -11,7 +11,6 @@ class NotificationListWidget extends StatelessWidget {
         title: Text("Notification", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.white,
         elevation: 0,
-        iconTheme: IconThemeData(color: Colors.green),
       ),
       body: ListView(
         padding: EdgeInsets.all(10),
