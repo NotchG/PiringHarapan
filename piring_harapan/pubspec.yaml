@@ -39,6 +39,7 @@ dependencies:
   intl: ^0.20.2
   fl_chart: ^0.70.2
   easy_animated_indexed_stack: ^0.0.3
+  path_provider: ^2.0.11
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,8 @@ flutter:
     - assets/data/TYPES_INGREDIENTS.json
     - assets/data/FINANCIAL_PROGRAM.json
     - assets/data/REVIEW_DATA.json
+    - assets/data/USERS_DATA.json
+    - assets/img/logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
