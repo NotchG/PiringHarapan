@@ -78,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
       _showDialog(
           "Info", "User dengan posisi '$position' belum memiliki halaman.");
     }
-  }
+  } //bagian untuk navigate
 
   void _showDialog(String title, String message, [VoidCallback? onConfirm]) {
     showDialog(

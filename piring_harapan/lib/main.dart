@@ -10,7 +10,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: _buildTheme(),
-    home: RegisterPage(),
+    home: MainTukangMasakView(),
   ));
 }
 
