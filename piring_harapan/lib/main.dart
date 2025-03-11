@@ -7,6 +7,7 @@ import 'package:piring_harapan/login_page/register_page.dart';
 import 'package:piring_harapan/splash_screen.dart';
 import 'package:piring_harapan/role_select.dart';
 import 'package:piring_harapan/petani/main_petani_view.dart';
+import 'package:piring_harapan/penerima/main_penerima_view.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +20,8 @@ void main() {
       '/roleSelection': (context) => RoleSelectionScreen(),
       '/pemerintah': (context) => MainPemerintahView(),
       '/tukang_masak': (context) => MainTukangMasakView(),
-      '/petani': (context) => MainPetaniView()
+      '/petani': (context) => MainPetaniView(),
+      '/penerima': (context) => MainPenerimaView(),
     },
   ));
 }
