@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/pemerintah/view/history_section/logbook_view.dart';
-import 'package:piring_harapan/pemerintah/view/history_section/staff_data_section/staff_data_details_view.dart';
-import 'package:piring_harapan/pemerintah/view/history_section/staff_data_section/staff_data_view.dart';
 
 class LogbookNavigator extends StatefulWidget {
   const LogbookNavigator({super.key});

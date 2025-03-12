@@ -71,7 +71,7 @@ class _PemerintahHomeViewState extends State<PemerintahHomeView> {
                   ),
                   InkWell(
                     onTap: () {
-                      NavigationBar nBar = glbKey.currentWidget as NavigationBar;
+                      NavigationBar nBar = PEMERINTAH_KEY.currentWidget as NavigationBar;
                       nBar.onDestinationSelected!(3);
                     },
                     child: Container(

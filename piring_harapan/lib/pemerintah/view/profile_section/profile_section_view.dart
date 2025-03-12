@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:piring_harapan/pemerintah/view/components/profile_card_builder.dart';
+import 'package:piring_harapan/common_components/profile_card_builder.dart';
 import 'package:piring_harapan/pemerintah/view/main_pemerintah_view.dart';
+import 'package:piring_harapan/pemerintah/view/profile_section/update_profile_section/profile_update_view.dart';
 
 class ProfileSectionView extends StatefulWidget {
   const ProfileSectionView({super.key});
@@ -12,7 +13,7 @@ class ProfileSectionView extends StatefulWidget {
 class _ProfileSectionViewState extends State<ProfileSectionView> {
 
   void navigateBotNav(int index) {
-    NavigationBar nBar = glbKey.currentWidget as NavigationBar;
+    NavigationBar nBar = PEMERINTAH_KEY.currentWidget as NavigationBar;
     nBar.onDestinationSelected!(index);
   }
 
@@ -65,14 +66,18 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                         title: "No Telepon",
                         subTitle: "+6287851327818",
                         onClick: () {
-
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => ProfileUpdateView()
+                          ));
                         }
                     ),
                     ProfileCardData(
                         title: "Email",
                         subTitle: "ppid@kemendikbud.go.id",
                         onClick: () {
-
+                          Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => ProfileUpdateView()
+                          ));
                         }
                     )
                   ]
@@ -92,7 +97,7 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                     ProfileCardData(
                         title: "Analysis Review",
                         onClick: () {
-                          NavigationBar nBar = glbKey.currentWidget as NavigationBar;
+                          NavigationBar nBar = PEMERINTAH_KEY.currentWidget as NavigationBar;
                           nBar.onDestinationSelected!(3);
                         }
                     ),

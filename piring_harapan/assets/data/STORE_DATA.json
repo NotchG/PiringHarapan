@@ -1,0 +1,5 @@
+[{"store_id":"ST001","store_name":"Brown Inc","store_rating":75,"store_response":13,"store_subscribers":650,"store_totalincome":24170},
+{"store_id":"ST002","store_name":"Zboncak-Pouros","store_rating":75,"store_response":38,"store_subscribers":744,"store_totalincome":1677500},
+{"store_id":"ST003","store_name":"Feil Inc","store_rating":8,"store_response":39,"store_subscribers":789,"store_totalincome":2739454},
+{"store_id":"ST004","store_name":"Weissnat-Romaguera","store_rating":90,"store_response":3,"store_subscribers":850,"store_totalincome":1041183},
+{"store_id":"ST005","store_name":"Hodkiewicz-Bauch","store_rating":39,"store_response":20,"store_subscribers":895,"store_totalincome":2825204}]

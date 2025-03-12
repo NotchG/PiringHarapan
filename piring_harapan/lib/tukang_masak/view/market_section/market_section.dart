@@ -1,16 +1,152 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:piring_harapan/common_components/text_search_bar.dart';
+import 'package:piring_harapan/tukang_masak/controller/market_section_controller.dart';
+import 'package:piring_harapan/tukang_masak/view/components/category_card.dart';
 
-class MarketSection extends StatelessWidget {
+class MarketSection extends StatefulWidget {
+  const MarketSection({super.key});
+
+  @override
+  State<MarketSection> createState() => _MarketSectionState();
+}
+
+class _MarketSectionState extends State<MarketSection> {
+
+  String? category;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[800],
-      body: Center(
-        child: Text(
-          "Market Section",
-          style: TextStyle(color: Colors.white, fontSize: 24),
-        ),
-      ),
+        body: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.only(left: 20, right: 20, top: 20),
+            child: ListView(
+              children: [
+                Text(
+                  "What Grocery Do You Want To Shop Today?",
+                  style: TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 30
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextSearchBar(
+                        hintText: "Search the ingredients You Want",
+                        onChanged: (s) {
+
+                        },
+                      ),
+                    ),
+                    IconButton(
+                        onPressed: (){},
+                        icon: Icon(
+                            Icons.shopping_cart_outlined
+                        )
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  "Categories",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  height: 100,
+                  width: double.infinity,
+                  child: ListView(
+                    shrinkWrap: true,
+                    physics: ClampingScrollPhysics(),
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      CategoryCard(
+                          image: NetworkImage("https://cdn.britannica.com/17/196817-159-9E487F15/vegetables.jpg"),
+                          onClick: () {
+                            setState(() {
+                              category = "vegetables";
+                            });
+                          }
+                      ),
+                      CategoryCard(
+                          image: NetworkImage("https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I="),
+                          onClick: () {
+                            setState(() {
+                              category = "fruits";
+                            });
+                          }
+                      ),
+                      CategoryCard(
+                          image: NetworkImage("https://t3.ftcdn.net/jpg/02/26/53/80/360_F_226538033_C42p96JDNwkSdQs86Agxd1TtaVJsyJ71.jpg"),
+                          onClick: () {
+                            setState(() {
+                              category = "meat";
+                            });
+                          }
+                      ),
+                      CategoryCard(
+                          image: NetworkImage("https://media.istockphoto.com/id/544807136/photo/various-fresh-dairy-products.jpg?s=612x612&w=0&k=20&c=U5T70bi24itoTDive1CVonJbJ97ChyL2Pz1I2kOoSRo="),
+                          onClick: () {
+                            setState(() {
+                              category = "dairy";
+                            });
+                          }
+                      ),
+                      CategoryCard(
+                          image: NetworkImage("https://media.istockphoto.com/id/481882305/photo/different-types-of-cereal-grains-with-ears.jpg?s=612x612&w=0&k=20&c=1cD0aYvSyQuZSCozhmBUojERS7QMmOQYOgkcpg7hcvk="),
+                          onClick: () {
+                            setState(() {
+                              category = "grains";
+                            });
+                          }
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  "Products",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                FutureBuilder(
+                    future: MarketSectionController.showAllProductsBasedOnCategory(category: category ?? ""),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasData) {
+                        return ListView(
+                          shrinkWrap: true,
+                          physics: ClampingScrollPhysics(),
+                          children: [
+
+                          ],
+                        );
+                      }
+                      return Text("Loading");
+                    }
+                )
+              ],
+            ),
+          ),
+        )
     );
   }
 }
