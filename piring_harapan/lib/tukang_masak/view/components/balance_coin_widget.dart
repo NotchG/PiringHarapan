@@ -15,13 +15,12 @@ class BalanceCoinWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.green), // Border hijau
-        borderRadius: BorderRadius.circular(12), // Radius untuk kotak
+        border: Border.all(color: Colors.green),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // **Balance Section**
           _buildBalanceOrCoin(
             icon: Icons.account_balance_wallet,
             label: "Balance",
@@ -30,15 +29,11 @@ class BalanceCoinWidget extends StatelessWidget {
                   (Match m) => "${m[1]}.",
                 )}",
           ),
-
-          // **Divider (Garis Pemisah)**
           Container(
             height: 40,
             width: 1.5,
             color: Colors.grey[400],
           ),
-
-          // **Coin Section**
           _buildBalanceOrCoin(
             icon: Icons.monetization_on,
             label: "Coin",
@@ -52,7 +47,6 @@ class BalanceCoinWidget extends StatelessWidget {
     );
   }
 
-  /// **Fungsi untuk membuat bagian Balance & Coin**
   Widget _buildBalanceOrCoin({
     required IconData icon,
     required String label,

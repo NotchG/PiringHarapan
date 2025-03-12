@@ -12,7 +12,7 @@ class HeaderWidget extends StatelessWidget {
       child: Text(
         "Welcome Back,\n$name!",
         style: TextStyle(
-          fontSize: 35, // Menyesuaikan font dengan gambar
+          fontSize: 35,
           fontWeight: FontWeight.bold,
         ),
       ),

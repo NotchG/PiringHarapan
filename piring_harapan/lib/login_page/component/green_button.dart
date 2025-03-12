@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class GreenButton extends StatelessWidget {
   final String text;
-  final VoidCallback?
-      onPressed; // Mengizinkan null agar tombol bisa dinonaktifkan
+  final VoidCallback? onPressed;
 
   const GreenButton({Key? key, required this.text, required this.onPressed})
       : super(key: key);
@@ -11,18 +10,14 @@ class GreenButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onPressed, // Sekarang bisa menerima null
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: onPressed != null
-            ? Colors.green
-            : Colors.grey, // Warna berubah jika disabled
-        foregroundColor: Colors.white, // Warna teks putih
+        backgroundColor: onPressed != null ? Colors.green : Colors.grey,
+        foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
-          borderRadius:
-              BorderRadius.circular(8), // Membuat sudut sedikit membulat
+          borderRadius: BorderRadius.circular(8),
         ),
-        padding: EdgeInsets.symmetric(
-            horizontal: 24, vertical: 12), // Ukuran padding tombol
+        padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
       ),
       child: Text(
         text,

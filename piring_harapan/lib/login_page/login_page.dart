@@ -6,9 +6,16 @@ import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart
 import 'package:piring_harapan/login_page/component/login_form.dart';
 import 'package:piring_harapan/login_page/component/green_button.dart';
 import 'package:piring_harapan/login_page/register_page.dart';
+import 'package:piring_harapan/penerima/main_penerima_view.dart';
 import 'package:piring_harapan/pemerintah/view/main_pemerintah_view.dart';
+import 'package:piring_harapan/tukang_masak/main_tukang_masak_view.dart';
+import 'package:piring_harapan/petani/main_petani_view.dart';
 
 class LoginPage extends StatefulWidget {
+  final String selectedRole;
+
+  LoginPage({required this.selectedRole});
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -27,11 +34,11 @@ class _LoginPageState extends State<LoginPage> {
         String jsonString = await file.readAsString();
         return jsonString.isNotEmpty ? jsonDecode(jsonString) : [];
       } else {
-        print("file USERS_DATA.json tidak ditemukan.");
+        print("File USERS_DATA.json tidak ditemukan.");
         return [];
       }
     } catch (e) {
-      print("error membaca data: $e");
+      print("Error membaca data: $e");
       return [];
     }
   }
@@ -47,7 +54,6 @@ class _LoginPageState extends State<LoginPage> {
 
     List<dynamic> users = await _readUserData();
 
-    // Cek apakah email & password cocok
     var matchedUser = users.firstWhere(
       (user) =>
           user["email"] == inputEmail && user["password"] == inputPassword,
@@ -55,30 +61,45 @@ class _LoginPageState extends State<LoginPage> {
     );
 
     if (matchedUser != null) {
-      String userPosition = matchedUser["position"];
-      print(
-          "login berhasil: ${matchedUser['fullName']} dengan posisi $userPosition");
+      print("Login berhasil: ${matchedUser['fullName']}");
 
       _showDialog(
           "Login Berhasil", "Selamat datang, ${matchedUser['fullName']}!", () {
-        _navigateAfterLogin(userPosition);
+        _navigateAfterLogin();
       });
     } else {
       _showDialog("Login Gagal", "Email atau Password salah.");
     }
   }
 
-  void _navigateAfterLogin(String position) {
-    if (position == "Pemerintah") {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => MainPemerintahView()),
-      );
-    } else {
-      _showDialog(
-          "Info", "User dengan posisi '$position' belum memiliki halaman.");
+  void _navigateAfterLogin() {
+    switch (widget.selectedRole) {
+      case "Penerima":
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MainPenerimaView()),
+        );
+        break;
+      case "Pemerintah":
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MainPemerintahView()),
+        );
+        break;
+      case "Pemasak":
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MainTukangMasakView()),
+        );
+        break;
+      case "Petani":
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MainPetaniView()),
+        );
+        break;
     }
-  } //bagian untuk navigate
+  }
 
   void _showDialog(String title, String message, [VoidCallback? onConfirm]) {
     showDialog(
@@ -116,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 20),
               Image.asset(
                 "assets/img/logo.png",
-                height: 120,
+                height: 145,
                 fit: BoxFit.contain,
               ),
               SizedBox(height: 20),
@@ -129,19 +150,22 @@ class _LoginPageState extends State<LoginPage> {
                 text: "Login",
                 onPressed: _loginUser,
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => RegisterPage()),
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            RegisterPage(selectedRole: widget.selectedRole)),
                   );
                 },
                 child: Text(
-                  "Don't have an account yet? Register Here",
+                  "Don't have an account yet? Register here",
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.green,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),

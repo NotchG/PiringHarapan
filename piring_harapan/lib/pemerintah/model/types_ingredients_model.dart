@@ -20,8 +20,8 @@ class TypesIngredientsModel {
         source = json.containsKey('source_of_supply') &&
                 json['source_of_supply'] != null
             ? json['source_of_supply'] as String
-            : "Unknown", // Tambahkan nilai default
+            : "Unknown",
         mbgMenu = json.containsKey('MBG_menu') && json['MBG_menu'] != null
             ? json['MBG_menu'] as String
-            : "Not Available"; // Tambahkan nilai default
+            : "Not Available";
 }

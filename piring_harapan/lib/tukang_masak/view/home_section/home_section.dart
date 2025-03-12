@@ -111,7 +111,6 @@ class HomeSection extends StatelessWidget {
                   price: 25000,
                 ),
                 SizedBox(height: 8),
-                // Posisikan tombol MORE di tengah
                 Center(
                   child: MoreButtonWidget(
                     onTap: () {

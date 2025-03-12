@@ -17,7 +17,7 @@ class IngredientsDataView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               HeaderNavigation(text: "Logbook"),
-              SizedBox(height: 20), // Jarak antara header dan card pertama
+              SizedBox(height: 20),
               IngredientCard(
                 title: "Types of Ingredients",
                 onClick: () {
@@ -28,7 +28,7 @@ class IngredientsDataView extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(height: 15), // Jarak antar card
+              SizedBox(height: 15),
               IngredientCard(
                 title: "Source of Ingredients",
                 onClick: () {

@@ -11,7 +11,6 @@ class FoodCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigasi ke halaman detail saat kartu ditekan
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -29,7 +28,6 @@ class FoodCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Gambar makanan dengan aspect ratio diperbaiki
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Container(
@@ -38,8 +36,7 @@ class FoodCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(foodData.imageUrl),
-                    fit: BoxFit
-                        .cover, // Perbaiki agar gambar tidak terpotong sepenuhnya
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -69,8 +66,6 @@ class FoodCard extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                   ),
                   SizedBox(height: 10),
-
-                  // Nutrition Tags
                   Wrap(
                     spacing: 8,
                     runSpacing: 8,

@@ -33,9 +33,9 @@ class _MainTukangMasakViewState extends State<MainTukangMasakView> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xFFCDE3B5), // Warna hijau muda
-        selectedItemColor: Colors.brown, // Warna ikon aktif
-        unselectedItemColor: Colors.grey, // Warna ikon tidak aktif
+        backgroundColor: Color(0xFFCDE3B5),
+        selectedItemColor: Colors.brown,
+        unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
