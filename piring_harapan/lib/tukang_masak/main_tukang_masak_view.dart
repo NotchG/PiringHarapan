@@ -1,6 +1,4 @@
-import 'package:easy_animated_indexed_stack/easy_animated_indexed_stack.dart';
 import 'package:flutter/material.dart';
-import 'package:piring_harapan/tukang_masak/view/home_navigator.dart';
 import 'package:piring_harapan/tukang_masak/view/home_section/home_section.dart';
 import 'package:piring_harapan/tukang_masak/view/market_section/market_section.dart';
 import 'package:piring_harapan/tukang_masak/view/notification_section/notification_section.dart';
@@ -21,25 +19,25 @@ class _MainTukangMasakViewState extends State<MainTukangMasakView> {
     return Scaffold(
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
-          backgroundColor: Color(0xFFCDE3B5),
-              labelTextStyle: WidgetStateTextStyle.resolveWith(
-                (Set<WidgetState> states) {
-              final Color color = states.contains(WidgetState.selected) ? Colors.brown : Colors.black54;
-              return TextStyle(
-                  color: Colors.black54,
-                  overflow: TextOverflow.ellipsis
-              );
-            },
-          ),
-          iconTheme: WidgetStateProperty.resolveWith(
-                (Set<WidgetState> states) {
-              final Color color = states.contains(WidgetState.selected) ? Colors.white : Colors.brown;
-              return IconThemeData(
-                color: color
-              );
-            },
-          ),
-          indicatorColor: Colors.transparent
+            backgroundColor: Color(0xFFCDE3B5),
+            labelTextStyle: WidgetStateTextStyle.resolveWith(
+                  (Set<WidgetState> states) {
+                final Color color = states.contains(WidgetState.selected) ? Colors.brown : Colors.black54;
+                return TextStyle(
+                    color: Colors.black54,
+                    overflow: TextOverflow.ellipsis
+                );
+              },
+            ),
+            iconTheme: WidgetStateProperty.resolveWith(
+                  (Set<WidgetState> states) {
+                final Color color = states.contains(WidgetState.selected) ? Colors.white : Colors.brown;
+                return IconThemeData(
+                    color: color
+                );
+              },
+            ),
+            indicatorColor: Colors.transparent
         ),
         child: NavigationBar(
             key: TUKANGMASAK_KEY,
@@ -85,36 +83,4 @@ class _MainTukangMasakViewState extends State<MainTukangMasakView> {
     );
   }
 
-  // @override
-  // Widget build(BuildContext context) {
-  //   return Scaffold(
-  //     body: _sections[_selectedIndex],
-  //     bottomNavigationBar: BottomNavigationBar(
-  //       currentIndex: _selectedIndex,
-  //       onTap: _onItemTapped,
-  //       type: BottomNavigationBarType.fixed,
-  //       backgroundColor: Color(0xFFCDE3B5), // Warna hijau muda
-  //       selectedItemColor: Colors.brown, // Warna ikon aktif
-  //       unselectedItemColor: Colors.grey, // Warna ikon tidak aktif
-  //       items: const [
-  //         BottomNavigationBarItem(
-  //           icon: Icon(Icons.home),
-  //           label: 'Home',
-  //         ),
-  //         BottomNavigationBarItem(
-  //           icon: Icon(Icons.shopping_cart),
-  //           label: 'Market',
-  //         ),
-  //         BottomNavigationBarItem(
-  //           icon: Icon(Icons.notifications),
-  //           label: 'Notification',
-  //         ),
-  //         BottomNavigationBarItem(
-  //           icon: Icon(Icons.person),
-  //           label: 'Profile',
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
 }

@@ -6,20 +6,19 @@ class AnalysisChartWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Chart Pie
         SizedBox(
           height: 200,
           child: PieChart(
             PieChartData(
               sections: [
                 PieChartSectionData(
-                  color: Colors.redAccent, // Warna untuk "Like"
+                  color: Colors.redAccent,
                   value: 79.46,
                   title: '',
                   radius: 50,
                 ),
                 PieChartSectionData(
-                  color: Colors.blueAccent, // Warna untuk "Dislike"
+                  color: Colors.blueAccent,
                   value: 20.54,
                   title: '',
                   radius: 50,
@@ -47,7 +46,6 @@ class AnalysisChartWidget extends StatelessWidget {
     );
   }
 
-  // Widget untuk membuat legend indikator warna
   Widget _buildLegendItem(Color color, String text) {
     return Row(
       children: [

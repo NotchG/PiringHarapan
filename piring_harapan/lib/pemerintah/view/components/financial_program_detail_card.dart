@@ -19,7 +19,6 @@ class FinancialProgramDetailCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header: Pesanan Selesai
           Container(
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
@@ -35,16 +34,11 @@ class FinancialProgramDetailCard extends StatelessWidget {
             ),
           ),
           SizedBox(height: 10),
-
-          // Kode Pengiriman
           Text(
             "Kode Pengiriman: ${financialProgram.kodePengiriman}",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-
           SizedBox(height: 10),
-
-          // Alamat Pengiriman
           _buildSectionTitle("Alamat Pengiriman"),
           Row(
             children: [
@@ -58,19 +52,12 @@ class FinancialProgramDetailCard extends StatelessWidget {
               ),
             ],
           ),
-
           SizedBox(height: 10),
-
-          // Catatan Pemesanan
-          // Memanggil catatan pemesanan dalam bentuk widget Text()
           _buildBoxContainer(
             "Catatan Pemesanan",
             Text(financialProgram.catatanPemesanan),
           ),
-
           SizedBox(height: 10),
-
-          // Detail Pemesanan
           _buildBoxContainer(
             "Detail Pemesanan",
             Column(
@@ -85,10 +72,7 @@ class FinancialProgramDetailCard extends StatelessWidget {
               ],
             ),
           ),
-
           SizedBox(height: 10),
-
-          // List Item Pemesanan
           Container(
             padding: EdgeInsets.all(10),
             decoration: BoxDecoration(
@@ -122,7 +106,6 @@ class FinancialProgramDetailCard extends StatelessWidget {
     );
   }
 
-  // Widget untuk menampilkan judul bagian
   Widget _buildSectionTitle(String title) {
     return Text(
       title,
@@ -130,7 +113,6 @@ class FinancialProgramDetailCard extends StatelessWidget {
     );
   }
 
-  // Widget untuk menampilkan informasi dalam box
   Widget _buildBoxContainer(String title, Widget content) {
     return Container(
       padding: EdgeInsets.all(10),
@@ -152,7 +134,6 @@ class FinancialProgramDetailCard extends StatelessWidget {
     );
   }
 
-  // Widget untuk menampilkan detail pemesanan dengan ikon
   Widget _buildDetailRow(IconData icon, String title, String value) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 5),
@@ -168,7 +149,6 @@ class FinancialProgramDetailCard extends StatelessWidget {
     );
   }
 
-  // Widget untuk menampilkan harga dengan format yang rapi
   Widget _buildPriceRow(String title, String value, {bool isBold = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 3),

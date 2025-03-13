@@ -34,7 +34,6 @@ class FinancialProgramCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // Placeholder Image
             Container(
               width: 80,
               height: 80,

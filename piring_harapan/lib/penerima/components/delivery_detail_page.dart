@@ -19,14 +19,12 @@ class DeliveryDetailPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              HeaderNavigation(text: title), // Menggunakan HeaderNavigation
+              HeaderNavigation(text: title),
               SizedBox(height: 16),
-
-              // Order Detail Section
               Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Color(0xffE9F5DB), // Warna hijau muda
+                  color: Color(0xffE9F5DB),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Text(
@@ -35,8 +33,6 @@ class DeliveryDetailPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8),
-
-              // Detail Order
               Container(
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -65,8 +61,6 @@ class DeliveryDetailPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 16),
-
-              // Track Your Order Section
               Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -79,7 +73,6 @@ class DeliveryDetailPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8),
-
               Container(
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -98,8 +91,6 @@ class DeliveryDetailPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 16),
-
-              // Tracking Progress Section
               _buildTrackingProgress([
                 {"time": "07 Mar | 10.50 AM", "status": "Order in transit."},
                 {

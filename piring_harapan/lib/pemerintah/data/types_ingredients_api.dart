@@ -5,11 +5,11 @@ class TypesIngredientsAPI {
     try {
       String data =
           await rootBundle.loadString('assets/data/TYPES_INGREDIENTS.json');
-      print("JSON Loaded Successfully"); // Tambahkan ini untuk debugging
+      print("JSON Loaded Successfully");
       return data;
     } catch (e) {
-      print("Error loading JSON: $e"); // Debugging jika gagal
-      return "[]"; // Pastikan tetap mengembalikan JSON kosong jika gagal
+      print("Error loading JSON: $e");
+      return "[]";
     }
   }
 }

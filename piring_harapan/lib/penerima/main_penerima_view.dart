@@ -33,9 +33,9 @@ class _MainPenerimaViewState extends State<MainPenerimaView> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xFFCDE5B6), // Warna navbar sesuai dengan desain
-        selectedItemColor: Colors.brown, // Warna ikon aktif
-        unselectedItemColor: Colors.grey, // Warna ikon tidak aktif
+        backgroundColor: Color(0xFFCDE5B6),
+        selectedItemColor: Colors.brown,
+        unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

@@ -55,7 +55,6 @@ class RegistrationFormState extends State<RegistrationForm> {
     widget.onValidationChanged(isFormValid);
   }
 
-  // Fungsi untuk mengambil data dari form
   Map<String, dynamic> getFormData() {
     return {
       "fullName": fullNameController.text,

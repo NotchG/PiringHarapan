@@ -11,7 +11,7 @@ class StoreRating extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(16), // Membuat sudut lebih rounded
+        borderRadius: BorderRadius.circular(16),
         gradient: LinearGradient(
           colors: [Colors.green.shade900, Colors.green.shade300],
           begin: Alignment.topLeft,
@@ -29,7 +29,7 @@ class StoreRating extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 14,
-                  color: Colors.white, // Warna teks putih
+                  color: Colors.white,
                 ),
               ),
               SizedBox(height: 8),

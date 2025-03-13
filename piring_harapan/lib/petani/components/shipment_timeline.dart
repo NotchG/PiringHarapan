@@ -13,8 +13,7 @@ class ShipmentTimeline extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(
-            color: Colors.green[300]!, width: 1), // Border hijau lebih tipis
+        border: Border.all(color: Colors.green[300]!, width: 1),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -37,8 +36,7 @@ class ShipmentTimeline extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Icon(Icons.circle,
-                          size: 12, color: Colors.green), // Icon lebih besar
+                      Icon(Icons.circle, size: 12, color: Colors.green),
                       if (index != shipments.length - 1)
                         Container(
                           height: 28,

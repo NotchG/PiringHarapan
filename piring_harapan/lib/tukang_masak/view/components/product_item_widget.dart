@@ -4,20 +4,20 @@ class ProductItemWidget extends StatelessWidget {
   final String imagePath;
   final String productName;
   final int price;
-  final VoidCallback? onTap; // Tambahkan onTap sebagai parameter opsional
+  final VoidCallback? onTap;
 
   const ProductItemWidget({
     Key? key,
     required this.imagePath,
     required this.productName,
     required this.price,
-    this.onTap, // Bisa null jika tidak ingin aksi ketika diklik
+    this.onTap,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap, // Jalankan onTap jika tidak null
+      onTap: onTap,
       child: Container(
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
@@ -26,7 +26,6 @@ class ProductItemWidget extends StatelessWidget {
         ),
         child: Row(
           children: [
-            // **Gambar Produk**
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
@@ -36,10 +35,7 @@ class ProductItemWidget extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-
             SizedBox(width: 12),
-
-            // **Detail Produk**
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

@@ -33,9 +33,9 @@ class _MainPetaniViewState extends State<MainPetaniView> {
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color(0xFFCDE5B6), // Sesuaikan warna jika perlu
-        selectedItemColor: Colors.green, // Warna ikon aktif
-        unselectedItemColor: Colors.grey, // Warna ikon tidak aktif
+        backgroundColor: Color(0xFFCDE5B6),
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

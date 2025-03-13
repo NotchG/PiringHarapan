@@ -8,15 +8,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // Menyesuaikan dengan background gambar
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(vertical: 16), // Padding atas-bawah
+          padding: EdgeInsets.symmetric(vertical: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HeaderWidget(name: "Dedeng Herman"),
-              SizedBox(height: 8), // Jarak antar komponen
+              SizedBox(height: 8),
               NewOrderCard(
                 imagePath: "assets/img/angga_hamzah.png",
                 orderDetails: "50 Orders from Angga Hamzah\nRp800.000",
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               StoreRating(rating: 0.81),
-              SizedBox(height: 16), // Jarak ke bawah agar tidak terlalu dekat
+              SizedBox(height: 16),
             ],
           ),
         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FeedbackCardWidget extends StatelessWidget {
   final String name;
-  final String imagePath; // Hanya mendukung path lokal (assets)
+  final String imagePath;
   final String feedback;
   final double rating;
 
@@ -26,11 +26,10 @@ class FeedbackCardWidget extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Foto Profil dari Assets
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: Image.asset(
-              imagePath, // Menggunakan assets lokal
+              imagePath,
               width: 60,
               height: 60,
               fit: BoxFit.cover,
@@ -40,7 +39,6 @@ class FeedbackCardWidget extends StatelessWidget {
             ),
           ),
           SizedBox(width: 12),
-          // Konten Feedback
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

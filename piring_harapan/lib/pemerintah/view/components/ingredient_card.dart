@@ -13,24 +13,21 @@ class IngredientCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 160, // Mengatur tinggi card agar sesuai desain
-      width: double.infinity, // Memenuhi lebar penuh
+      height: 160,
+      width: double.infinity,
       child: InkWell(
-        onTap: onClick, // Navigasi saat card ditekan
+        onTap: onClick,
         child: Container(
           decoration: BoxDecoration(
-            border: Border.all(
-                color: Color(0xff91C077), width: 1.5), // Warna border hijau
+            border: Border.all(color: Color(0xff91C077), width: 1.5),
             borderRadius: BorderRadius.circular(10),
           ),
-          padding: EdgeInsets.all(
-              20), // Padding lebih kecil agar teks tidak terlalu ke tengah
+          padding: EdgeInsets.all(20),
           child: Center(
             child: Text(
               title,
               style: TextStyle(
-                fontSize:
-                    18, // Sedikit lebih besar untuk proporsi yang lebih baik
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
                 color: Color(0xFFA88466),
               ),

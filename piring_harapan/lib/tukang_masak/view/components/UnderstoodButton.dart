@@ -12,11 +12,8 @@ class UnderstoodButton extends StatelessWidget {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
         onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) =>
-                      MainTukangMasakView())); // Kembali ke halaman sebelumnya
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => MainTukangMasakView()));
         },
         child: Padding(
           padding: EdgeInsets.symmetric(vertical: 12),

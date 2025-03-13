@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class RatingCard extends StatelessWidget {
-  final double rating; // Nilai rating dalam persen
+  final double rating;
 
   RatingCard({required this.rating});
 

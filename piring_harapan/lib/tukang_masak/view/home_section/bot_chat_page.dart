@@ -8,20 +8,18 @@ class BotChatPage extends StatefulWidget {
 class _BotChatPageState extends State<BotChatPage> {
   final TextEditingController _controller = TextEditingController();
   final List<Map<String, dynamic>> _messages = [];
-  bool _isTyping = false; // Untuk efek loading AI mengetik
+  bool _isTyping = false;
 
   void _sendMessage(String text) {
     if (text.trim().isEmpty) return;
 
     setState(() {
-      // Tambahkan pesan user ke chat
       _messages.add({"text": text, "isUser": true});
-      _isTyping = true; // AI mulai mengetik
+      _isTyping = true;
     });
 
     _controller.clear();
 
-    // Simulasi respon AI dengan delay
     Future.delayed(Duration(seconds: 1), () {
       _botResponse(text);
     });
@@ -29,18 +27,16 @@ class _BotChatPageState extends State<BotChatPage> {
 
   void _botResponse(String userMessage) {
     setState(() {
-      _isTyping = false; // AI selesai mengetik
+      _isTyping = false;
     });
 
     String botReply = _generateBotResponse(userMessage);
 
     setState(() {
-      // Tambahkan pesan bot ke chat
       _messages.add({"text": botReply, "isUser": false});
     });
   }
 
-  /// **📌 Fungsi untuk menentukan respon AI berdasarkan input user**
   String _generateBotResponse(String userMessage) {
     userMessage = userMessage.toLowerCase();
 
@@ -84,13 +80,10 @@ class _BotChatPageState extends State<BotChatPage> {
           Expanded(
             child: ListView.builder(
               padding: EdgeInsets.all(16),
-              itemCount: _messages.length +
-                  (_isTyping
-                      ? 1
-                      : 0), // Tambahkan 1 item jika AI sedang mengetik
+              itemCount: _messages.length + (_isTyping ? 1 : 0),
               itemBuilder: (context, index) {
                 if (_isTyping && index == _messages.length) {
-                  return _buildTypingIndicator(); // Tampilkan loading AI
+                  return _buildTypingIndicator();
                 }
                 final message = _messages[index];
                 return _buildChatBubble(message["text"], message["isUser"]);
@@ -103,13 +96,12 @@ class _BotChatPageState extends State<BotChatPage> {
     );
   }
 
-  /// **📌 Widget untuk balon chat**
   Widget _buildChatBubble(String message, bool isUser) {
     return Row(
       mainAxisAlignment:
           isUser ? MainAxisAlignment.end : MainAxisAlignment.start,
       children: [
-        if (!isUser) _buildAvatar(isUser), // Avatar AI di sebelah kiri
+        if (!isUser) _buildAvatar(isUser),
         Flexible(
           child: Container(
             margin: EdgeInsets.symmetric(vertical: 6, horizontal: 10),
@@ -133,12 +125,11 @@ class _BotChatPageState extends State<BotChatPage> {
             ),
           ),
         ),
-        if (isUser) _buildAvatar(isUser), // Avatar User di sebelah kanan
+        if (isUser) _buildAvatar(isUser),
       ],
     );
   }
 
-  /// **📌 Widget untuk avatar bot & user**
   Widget _buildAvatar(bool isUser) {
     return CircleAvatar(
       backgroundColor: Colors.white,
@@ -149,7 +140,6 @@ class _BotChatPageState extends State<BotChatPage> {
     );
   }
 
-  /// **📌 Widget efek AI sedang mengetik**
   Widget _buildTypingIndicator() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
@@ -178,7 +168,6 @@ class _BotChatPageState extends State<BotChatPage> {
     );
   }
 
-  /// **📌 Widget efek titik-titik ketika AI mengetik**
   Widget _buildDot() {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 2),
@@ -193,7 +182,6 @@ class _BotChatPageState extends State<BotChatPage> {
     );
   }
 
-  /// **📌 Widget input chat**
   Widget _buildMessageInput() {
     return Padding(
       padding: EdgeInsets.all(12),

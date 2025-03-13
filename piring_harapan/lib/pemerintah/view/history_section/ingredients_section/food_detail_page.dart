@@ -14,19 +14,20 @@ class FoodDetailPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Gambar utama
               Stack(
                 children: [
                   Container(
                     width: double.infinity,
                     height: 250,
                     decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(foodData.imageUrl,),
-                        fit: BoxFit.cover
-                      ),
-                      borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20))
-                    ),
+                        image: DecorationImage(
+                            image: NetworkImage(
+                              foodData.imageUrl,
+                            ),
+                            fit: BoxFit.cover),
+                        borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(20),
+                            bottomRight: Radius.circular(20))),
                   ),
                   Positioned(
                     top: 20,
@@ -38,12 +39,9 @@ class FoodDetailPage extends StatelessWidget {
                       child: Container(
                         padding: EdgeInsets.all(7.0),
                         decoration: BoxDecoration(
-                            border: Border.all(
-                                color: Color(0xff91C077)
-                            ),
+                            border: Border.all(color: Color(0xff91C077)),
                             borderRadius: BorderRadius.circular(5),
-                          color: Colors.white
-                        ),
+                            color: Colors.white),
                         child: Icon(
                           Icons.arrow_back,
                           color: Color(0xff91C077),
@@ -71,8 +69,6 @@ class FoodDetailPage extends StatelessWidget {
                       style: TextStyle(fontSize: 16, color: Colors.grey),
                     ),
                     SizedBox(height: 20),
-
-                    // Deskripsi
                     ExpansionTile(
                       title: Text("Description"),
                       children: [
@@ -82,8 +78,6 @@ class FoodDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-
-                    // Nutritional Content
                     ExpansionTile(
                       title: Text("Nutritional Content"),
                       children: [
@@ -102,8 +96,6 @@ class FoodDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-
-                    // Source of Supply
                     ExpansionTile(
                       title: Text("Source of Supply"),
                       children: [
@@ -113,8 +105,6 @@ class FoodDetailPage extends StatelessWidget {
                         ),
                       ],
                     ),
-
-                    // MBG Menu
                     ExpansionTile(
                       title: Text("MBG Menu"),
                       children: [

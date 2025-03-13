@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:piring_harapan/login_page/login_page.dart';
 
 class RoleSelectionScreen extends StatelessWidget {
   @override
@@ -9,14 +10,16 @@ class RoleSelectionScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/img/logo.png', height: 100),
+            Image.asset('assets/img/logo.png', height: 175),
             const SizedBox(height: 16),
             const Text(
-              "Piring Harapan",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              "Silahkan pilih peran Anda",
+              style: TextStyle(
+                color: Colors.brown,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            const SizedBox(height: 8),
-            const Text("Silahkan pilih peran Anda"),
             const SizedBox(height: 24),
             Wrap(
               spacing: 16,
@@ -42,20 +45,11 @@ class RoleSelectionScreen extends StatelessWidget {
       BuildContext context) {
     return GestureDetector(
       onTap: () {
-        switch (title) {
-          case "Penerima":
-            Navigator.pushNamed(context, '/penerima');
-            break;
-          case "Pemerintah":
-            Navigator.pushNamed(context, '/pemerintah');
-            break;
-          case "Pemasak":
-            Navigator.pushNamed(context, '/tukang_masak');
-            break;
-          case "Petani":
-            Navigator.pushNamed(context, '/petani');
-            break;
-        }
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => LoginPage(selectedRole: title)),
+        );
       },
       child: Container(
         width: 150,

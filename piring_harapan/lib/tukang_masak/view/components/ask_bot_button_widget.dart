@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AskBotButtonWidget extends StatelessWidget {
-  final VoidCallback onTap; // Tidak boleh null, jadi harus diberikan
+  final VoidCallback onTap;
 
   const AskBotButtonWidget({
     Key? key,
@@ -15,13 +15,13 @@ class AskBotButtonWidget extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 16),
         decoration: BoxDecoration(
-          border: Border.all(color: Colors.green), // Border hijau
-          borderRadius: BorderRadius.circular(12), // Sudut membulat
+          border: Border.all(color: Colors.green),
+          borderRadius: BorderRadius.circular(12),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.auto_awesome, color: Colors.green, size: 20), // Ikon bot
+            Icon(Icons.auto_awesome, color: Colors.green, size: 20),
             SizedBox(width: 8),
             Text(
               "Ask Our Bot More About It!",
