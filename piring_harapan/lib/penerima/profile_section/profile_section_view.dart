@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/common_components/profile_card_builder.dart';
-import 'package:piring_harapan/tukang_masak/main_tukang_masak_view.dart';
-import 'package:piring_harapan/tukang_masak/view/profile_section/general_section/privacy_page_view.dart';
-import 'package:piring_harapan/tukang_masak/view/profile_section/general_section/termsofservices_view.dart';
-import 'package:piring_harapan/tukang_masak/view/profile_section/update_profile_section/profile_update_view.dart';
+import 'package:piring_harapan/penerima/profile_section/general_section/privacy_page_view.dart';
+import 'package:piring_harapan/penerima/profile_section/general_section/termsofservices_view.dart';
+import 'package:piring_harapan/penerima/profile_section/update_profile_section/profile_update_view.dart';
 
 class ProfileSectionView extends StatefulWidget {
   const ProfileSectionView({super.key});
@@ -13,11 +12,6 @@ class ProfileSectionView extends StatefulWidget {
 }
 
 class _ProfileSectionViewState extends State<ProfileSectionView> {
-
-  void navigateBotNav(int index) {
-    NavigationBar nBar = TUKANGMASAK_KEY.currentWidget as NavigationBar;
-    nBar.onDestinationSelected!(index);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,14 +38,14 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                     height: 10,
                   ),
                   Text(
-                      "Diana Asmirati",
+                      "Gilang Amarah",
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 16
                     ),
                   ),
                   Text(
-                    "Kitchen Staff",
+                    "Jl. Mawar No.45, Kota Bandung, Jawa Barat",
                     style: TextStyle(
                         fontSize: 12
                     ),
@@ -66,7 +60,7 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                   profileCards: [
                     ProfileCardData(
                         title: "No Telepon",
-                        subTitle: "+6287851327818",
+                        subTitle: "+6281205032005",
                         onClick: () {
                           Navigator.push(context, MaterialPageRoute(
                             builder: (context) => ProfileUpdateView()
@@ -75,7 +69,7 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                     ),
                     ProfileCardData(
                         title: "Email",
-                        subTitle: "diana.asmirati02@gmail.com",
+                        subTitle: "gilang.amarah@gmail.com",
                         onClick: () {
                           Navigator.push(context, MaterialPageRoute(
                               builder: (context) => ProfileUpdateView()
@@ -88,26 +82,46 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                 height: 20,
               ),
               ProfileCardBuilder(
-                  sectionTitle: "Monitoring Program",
+                  sectionTitle: "Distribution Data",
                   profileCards: [
                     ProfileCardData(
-                        title: "Kitchen Data",
+                        title: "Nearest distribution location",
                         onClick: () {
 
                         }
                     ),
                     ProfileCardData(
-                        title: "History of processed orders",
+                        title: "Food distribution schedule",
                         onClick: () {
 
                         }
                     ),
                     ProfileCardData(
-                        title: "History of purchasing ingredients from farmers",
+                        title: "List of foods ever received",
                         onClick: () {
 
                         }
                     )
+                  ]
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ProfileCardBuilder(
+                  sectionTitle: "Feedback",
+                  profileCards: [
+                    ProfileCardData(
+                        title: "Food review",
+                        onClick: () {
+
+                        }
+                    ),
+                    ProfileCardData(
+                        title: "History of reviews that have been given",
+                        onClick: () {
+
+                        }
+                    ),
                   ]
               ),
               SizedBox(

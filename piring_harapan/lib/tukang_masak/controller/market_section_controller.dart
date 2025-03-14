@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import '../data/product_api.dart';
 import '../model/product_model.dart';
@@ -62,6 +63,41 @@ class MarketSectionController {
           result.add(product);
         }
       }
+      return result;
+    } catch (e) {
+      print(e);
+    }
+    return [];
+  }
+
+  static Future<List<ProductModel>> searchProductByStoreID({
+    required String storeID,
+    int? limit,
+    bool shuffle = false
+  }) async {
+    try {
+      final response = await ProductAPI.getProducts();
+      Iterable data = await jsonDecode(response);
+      List<ProductModel> result = [];
+
+      for (var e in data) {
+        ProductModel product = ProductModel.fromJson(e);
+        if (product.storeId == storeID) {
+          // Add products that match the store ID
+          result.add(product);
+        }
+      }
+
+      // Shuffle the results if requested
+      if (shuffle && result.isNotEmpty) {
+        result.shuffle(Random());
+      }
+
+      // Apply limit if specified
+      if (limit != null && limit < result.length) {
+        result = result.sublist(0, limit);
+      }
+
       return result;
     } catch (e) {
       print(e);

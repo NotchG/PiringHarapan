@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 import 'package:piring_harapan/login_page/component/registration_form.dart';
 import 'package:piring_harapan/login_page/component/green_button.dart';
 import 'package:piring_harapan/login_page/login_page.dart';

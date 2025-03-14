@@ -33,15 +33,22 @@ class _ProfileUpdateViewState extends State<ProfileUpdateView> {
                   sectionTitle: "Tentang Saya",
                   profileCards: [
                     ProfileCardData(
-                        defaultValue: "Prof. Kelompok 2 UREEKA",
+                        defaultValue: "Dedeng Herman",
                         hintText: "Nama",
                         onChanged: (s) {
 
                         }
                     ),
                     ProfileCardData(
-                        defaultValue: "Menteri Pendidikan Dasar",
-                        hintText: "Jabatan",
+                        defaultValue: "Dedeng's Store",
+                        hintText: "Nama Toko",
+                        onChanged: (s) {
+
+                        }
+                    ),
+                    ProfileCardData(
+                        defaultValue: "Jl. Kemanggisan Raya No. 22",
+                        hintText: "Lokasi",
                         onChanged: (s) {
 
                         }
@@ -54,7 +61,7 @@ class _ProfileUpdateViewState extends State<ProfileUpdateView> {
                         }
                     ),
                     ProfileCardData(
-                        defaultValue: "ppid@kemendikbud.go.id",
+                        defaultValue: "dedeng.store@gmail.com",
                         hintText: "Email",
                         onChanged: (s) {
 

@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 import 'package:piring_harapan/login_page/component/login_form.dart';
 import 'package:piring_harapan/login_page/component/green_button.dart';
 import 'package:piring_harapan/login_page/register_page.dart';
@@ -24,19 +25,29 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
+  // Future<List<dynamic>> _readUserData() async {
+  //   try {
+  //     Directory directory = await getApplicationDocumentsDirectory();
+  //     String path = directory.path;
+  //     File file = File('$path/USERS_DATA.json');
+  //
+  //     if (await file.exists()) {
+  //       String jsonString = await file.readAsString();
+  //       return jsonString.isNotEmpty ? jsonDecode(jsonString) : [];
+  //     } else {
+  //       print("File USERS_DATA.json tidak ditemukan.");
+  //       return [];
+  //     }
+  //   } catch (e) {
+  //     print("Error membaca data: $e");
+  //     return [];
+  //   }
+  // }
+
   Future<List<dynamic>> _readUserData() async {
     try {
-      Directory directory = await getApplicationDocumentsDirectory();
-      String path = directory.path;
-      File file = File('$path/USERS_DATA.json');
-
-      if (await file.exists()) {
-        String jsonString = await file.readAsString();
-        return jsonString.isNotEmpty ? jsonDecode(jsonString) : [];
-      } else {
-        print("File USERS_DATA.json tidak ditemukan.");
-        return [];
-      }
+      String jsonString = await rootBundle.loadString('assets/data/USERS_DATA.json');
+      return jsonString.isNotEmpty ? jsonDecode(jsonString) : [];
     } catch (e) {
       print("Error membaca data: $e");
       return [];

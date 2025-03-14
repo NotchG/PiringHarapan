@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/common_components/profile_card_builder.dart';
 import 'package:piring_harapan/pemerintah/view/main_pemerintah_view.dart';
+import 'package:piring_harapan/pemerintah/view/profile_section/general_section/privacy_page_view.dart';
+import 'package:piring_harapan/pemerintah/view/profile_section/general_section/termsofservices_view.dart';
 import 'package:piring_harapan/pemerintah/view/profile_section/update_profile_section/profile_update_view.dart';
+import 'package:piring_harapan/splash_screen.dart';
 
 class ProfileSectionView extends StatefulWidget {
   const ProfileSectionView({super.key});
@@ -118,13 +121,25 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                     ProfileCardData(
                         title: "Privacy Policy",
                         onClick: () {
-
+                          Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => PrivacyPolicyView()
+                          ));
                         }
                     ),
                     ProfileCardData(
                         title: "Terms of Services",
                         onClick: () {
-
+                          Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => TermsofservicesView()
+                          ));
+                        }
+                    ),
+                    ProfileCardData(
+                        title: "Log out",
+                        onClick: () {
+                          Navigator.pushReplacement(context, MaterialPageRoute(
+                              builder: (context) => SplashScreen()
+                          ));
                         }
                     )
                   ]

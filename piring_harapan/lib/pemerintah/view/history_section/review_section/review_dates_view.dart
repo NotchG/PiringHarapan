@@ -6,7 +6,7 @@ import 'package:piring_harapan/pemerintah/view/components/date_picker_bar.dart';
 import 'package:piring_harapan/pemerintah/view/history_section/review_section/review_details_view.dart';
 
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 
 class ReviewDatesView extends StatefulWidget {
   final SchoolModel schoolModel;

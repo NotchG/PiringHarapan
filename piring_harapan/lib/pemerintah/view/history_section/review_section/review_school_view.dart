@@ -3,7 +3,7 @@ import 'package:piring_harapan/pemerintah/controller/review_controller.dart';
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
 import 'package:piring_harapan/pemerintah/view/history_section/review_section/review_dates_view.dart';
 
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 import 'package:piring_harapan/common_components/text_search_bar.dart';
 
 class ReviewSchoolView extends StatefulWidget {

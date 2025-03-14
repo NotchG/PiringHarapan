@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 
 class DeliveryDetailPage extends StatelessWidget {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:piring_harapan/petani/profile_section/profile_section_view.dart';
 import 'package:piring_harapan/petani/home_section/home_page.dart';
 import 'package:piring_harapan/petani/store_section/store_page.dart';
 import 'package:piring_harapan/tukang_masak/view/notification_section/notification_section.dart';
-import 'package:piring_harapan/petani/profile_section/profile_page.dart';
 
 class MainPetaniView extends StatefulWidget {
   @override
@@ -16,7 +16,7 @@ class _MainPetaniViewState extends State<MainPetaniView> {
     HomePage(),
     StorePage(),
     NotificationSection(),
-    ProfilePage(),
+    ProfileSectionView(),
   ];
 
   void _onItemTapped(int index) {

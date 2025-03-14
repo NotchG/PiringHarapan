@@ -33,15 +33,15 @@ class _ProfileUpdateViewState extends State<ProfileUpdateView> {
                   sectionTitle: "Tentang Saya",
                   profileCards: [
                     ProfileCardData(
-                        defaultValue: "Prof. Kelompok 2 UREEKA",
+                        defaultValue: "Gilang Amarah",
                         hintText: "Nama",
                         onChanged: (s) {
 
                         }
                     ),
                     ProfileCardData(
-                        defaultValue: "Menteri Pendidikan Dasar",
-                        hintText: "Jabatan",
+                        defaultValue: "Jl. Mawar No.45, Kota Bandung, Jawa Barat",
+                        hintText: "Lokasi",
                         onChanged: (s) {
 
                         }
@@ -54,7 +54,7 @@ class _ProfileUpdateViewState extends State<ProfileUpdateView> {
                         }
                     ),
                     ProfileCardData(
-                        defaultValue: "ppid@kemendikbud.go.id",
+                        defaultValue: "gilang.amarah@gmail.com",
                         hintText: "Email",
                         onChanged: (s) {
 

@@ -1,4 +1,6 @@
+import 'package:easy_animated_indexed_stack/easy_animated_indexed_stack.dart';
 import 'package:flutter/material.dart';
+import 'package:piring_harapan/tukang_masak/view/home_navigator.dart';
 import 'package:piring_harapan/tukang_masak/view/home_section/home_section.dart';
 import 'package:piring_harapan/tukang_masak/view/market_section/market_section.dart';
 import 'package:piring_harapan/tukang_masak/view/notification_section/notification_section.dart';

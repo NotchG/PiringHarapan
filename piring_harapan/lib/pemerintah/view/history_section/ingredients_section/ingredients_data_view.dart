@@ -1,4 +1,4 @@
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 import 'package:piring_harapan/pemerintah/view/components/ingredient_card.dart';
 import 'package:piring_harapan/pemerintah/view/history_section/ingredients_section/Ingredients_data_types_detail.dart';
 import 'package:piring_harapan/pemerintah/view/history_section/ingredients_section/IngredientsSource.dart';

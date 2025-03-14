@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/common_components/profile_card_builder.dart';
-import 'package:piring_harapan/tukang_masak/main_tukang_masak_view.dart';
-import 'package:piring_harapan/tukang_masak/view/profile_section/general_section/privacy_page_view.dart';
-import 'package:piring_harapan/tukang_masak/view/profile_section/general_section/termsofservices_view.dart';
-import 'package:piring_harapan/tukang_masak/view/profile_section/update_profile_section/profile_update_view.dart';
+import 'package:piring_harapan/petani/profile_section/general_section/privacy_page_view.dart';
+import 'package:piring_harapan/petani/profile_section/general_section/termsofservices_view.dart';
+import 'package:piring_harapan/petani/profile_section/update_profile_section/profile_update_view.dart';
 
 class ProfileSectionView extends StatefulWidget {
   const ProfileSectionView({super.key});
@@ -13,11 +12,6 @@ class ProfileSectionView extends StatefulWidget {
 }
 
 class _ProfileSectionViewState extends State<ProfileSectionView> {
-
-  void navigateBotNav(int index) {
-    NavigationBar nBar = TUKANGMASAK_KEY.currentWidget as NavigationBar;
-    nBar.onDestinationSelected!(index);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,14 +38,14 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                     height: 10,
                   ),
                   Text(
-                      "Diana Asmirati",
+                      "Dedeng's Store",
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 16
                     ),
                   ),
                   Text(
-                    "Kitchen Staff",
+                    "Jl. Kemanggisan Raya No.22",
                     style: TextStyle(
                         fontSize: 12
                     ),
@@ -75,7 +69,7 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                     ),
                     ProfileCardData(
                         title: "Email",
-                        subTitle: "diana.asmirati02@gmail.com",
+                        subTitle: "dedeng.store@gmail.com",
                         onClick: () {
                           Navigator.push(context, MaterialPageRoute(
                               builder: (context) => ProfileUpdateView()
@@ -88,26 +82,46 @@ class _ProfileSectionViewState extends State<ProfileSectionView> {
                 height: 20,
               ),
               ProfileCardBuilder(
-                  sectionTitle: "Monitoring Program",
+                  sectionTitle: "Land and Activity",
                   profileCards: [
                     ProfileCardData(
-                        title: "Kitchen Data",
+                        title: "Land data",
                         onClick: () {
 
                         }
                     ),
                     ProfileCardData(
-                        title: "History of processed orders",
+                        title: "Sales history of ingredients to the cooks",
                         onClick: () {
 
                         }
                     ),
                     ProfileCardData(
-                        title: "History of purchasing ingredients from farmers",
+                        title: "Delivery status",
                         onClick: () {
 
                         }
                     )
+                  ]
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ProfileCardBuilder(
+                  sectionTitle: "Feedback from Cooks",
+                  profileCards: [
+                    ProfileCardData(
+                        title: "Rating and reviews about ingredients quality",
+                        onClick: () {
+
+                        }
+                    ),
+                    ProfileCardData(
+                        title: "Average rating",
+                        onClick: () {
+
+                        }
+                    ),
                   ]
               ),
               SizedBox(

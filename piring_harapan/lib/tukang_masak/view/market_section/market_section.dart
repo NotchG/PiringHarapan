@@ -3,6 +3,9 @@ import 'package:flutter/rendering.dart';
 import 'package:piring_harapan/common_components/text_search_bar.dart';
 import 'package:piring_harapan/tukang_masak/controller/market_section_controller.dart';
 import 'package:piring_harapan/tukang_masak/view/components/category_card.dart';
+import 'package:piring_harapan/tukang_masak/view/market_section/product_detail_section/product_detail_view.dart';
+
+import '../components/product_card.dart';
 
 class MarketSection extends StatefulWidget {
   const MarketSection({super.key});
@@ -14,6 +17,7 @@ class MarketSection extends StatefulWidget {
 class _MarketSectionState extends State<MarketSection> {
 
   String? category;
+  String search = "";
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +43,10 @@ class _MarketSectionState extends State<MarketSection> {
                       child: TextSearchBar(
                         hintText: "Search the ingredients You Want",
                         onChanged: (s) {
-
+                          setState(() {
+                            category = "";
+                            search = s;
+                          });
                         },
                       ),
                     ),
@@ -78,7 +85,8 @@ class _MarketSectionState extends State<MarketSection> {
                             setState(() {
                               category = "vegetables";
                             });
-                          }
+                          },
+                        isActive: category == "vegetables",
                       ),
                       CategoryCard(
                           image: NetworkImage("https://media.istockphoto.com/id/529664572/photo/fruit-background.jpg?s=612x612&w=0&k=20&c=K7V0rVCGj8tvluXDqxJgu0AdMKF8axP0A15P-8Ksh3I="),
@@ -86,7 +94,8 @@ class _MarketSectionState extends State<MarketSection> {
                             setState(() {
                               category = "fruits";
                             });
-                          }
+                          },
+                        isActive: category == "fruits",
                       ),
                       CategoryCard(
                           image: NetworkImage("https://t3.ftcdn.net/jpg/02/26/53/80/360_F_226538033_C42p96JDNwkSdQs86Agxd1TtaVJsyJ71.jpg"),
@@ -94,7 +103,8 @@ class _MarketSectionState extends State<MarketSection> {
                             setState(() {
                               category = "meat";
                             });
-                          }
+                          },
+                        isActive: category == "meat",
                       ),
                       CategoryCard(
                           image: NetworkImage("https://media.istockphoto.com/id/544807136/photo/various-fresh-dairy-products.jpg?s=612x612&w=0&k=20&c=U5T70bi24itoTDive1CVonJbJ97ChyL2Pz1I2kOoSRo="),
@@ -102,7 +112,8 @@ class _MarketSectionState extends State<MarketSection> {
                             setState(() {
                               category = "dairy";
                             });
-                          }
+                          },
+                        isActive: category == "dairy",
                       ),
                       CategoryCard(
                           image: NetworkImage("https://media.istockphoto.com/id/481882305/photo/different-types-of-cereal-grains-with-ears.jpg?s=612x612&w=0&k=20&c=1cD0aYvSyQuZSCozhmBUojERS7QMmOQYOgkcpg7hcvk="),
@@ -110,7 +121,8 @@ class _MarketSectionState extends State<MarketSection> {
                             setState(() {
                               category = "grains";
                             });
-                          }
+                          },
+                        isActive: category == "grains",
                       ),
                     ],
                   ),
@@ -129,15 +141,21 @@ class _MarketSectionState extends State<MarketSection> {
                   height: 10,
                 ),
                 FutureBuilder(
-                    future: MarketSectionController.showAllProductsBasedOnCategory(category: category ?? ""),
+                    future: search == "" ? MarketSectionController.showAllProductsBasedOnCategory(category: category ?? "") : MarketSectionController.searchProductByName(name: search),
                     builder: (context, snapshot) {
                       if (snapshot.hasData) {
                         return ListView(
                           shrinkWrap: true,
                           physics: ClampingScrollPhysics(),
-                          children: [
-
-                          ],
+                          children: snapshot.data!.map((e) => ProductCard(
+                            product: e,
+                            isBestSeller: false,
+                            onClick: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => ProductDetailView(product: e)
+                              ));
+                            },
+                          )).toList(),
                         );
                       }
                       return Text("Loading");

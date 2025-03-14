@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 
 import 'package:piring_harapan/common_components/profile_textbar_builder.dart';
 
@@ -33,15 +33,22 @@ class _ProfileUpdateViewState extends State<ProfileUpdateView> {
                   sectionTitle: "Tentang Saya",
                   profileCards: [
                     ProfileCardData(
-                        defaultValue: "Prof. Kelompok 2 UREEKA",
+                        defaultValue: "Diana Asmirati",
                         hintText: "Nama",
                         onChanged: (s) {
 
                         }
                     ),
                     ProfileCardData(
-                        defaultValue: "Menteri Pendidikan Dasar",
-                        hintText: "Jabatan",
+                        defaultValue: "Kitchen Staff",
+                        hintText: "Posisi",
+                        onChanged: (s) {
+
+                        }
+                    ),
+                    ProfileCardData(
+                        defaultValue: "West Java",
+                        hintText: "Lokasi",
                         onChanged: (s) {
 
                         }
@@ -54,7 +61,7 @@ class _ProfileUpdateViewState extends State<ProfileUpdateView> {
                         }
                     ),
                     ProfileCardData(
-                        defaultValue: "ppid@kemendikbud.go.id",
+                        defaultValue: "diana.asmirati02@gmail.com",
                         hintText: "Email",
                         onChanged: (s) {
 

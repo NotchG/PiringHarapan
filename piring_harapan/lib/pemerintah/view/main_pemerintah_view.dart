@@ -4,7 +4,6 @@ import 'package:piring_harapan/pemerintah/controller/review_controller.dart';
 import 'package:piring_harapan/pemerintah/view/aspiration_section/aspiration_section_view.dart';
 import 'package:piring_harapan/pemerintah/view/home_section/pemerintah_home_view.dart';
 import 'package:piring_harapan/pemerintah/view/logbook_navigator.dart';
-import 'package:piring_harapan/pemerintah/view/profile_navigator.dart';
 import 'package:piring_harapan/pemerintah/view/profile_section/profile_section_view.dart';
 import 'package:piring_harapan/pemerintah/view/status_section/status_section_view.dart';
 
@@ -83,7 +82,7 @@ class _MainPemerintahViewState extends State<MainPemerintahView> {
                   return Text("Loading");
                 }
             ),
-            ProfileNavigator(),
+            ProfileSectionView(),
           ],
         ),
       ),

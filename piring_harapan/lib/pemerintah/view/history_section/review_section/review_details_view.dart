@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:piring_harapan/pemerintah/model/school_date_review_model.dart';
 import 'package:piring_harapan/pemerintah/model/school_model.dart';
 
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 import 'package:piring_harapan/pemerintah/view/components/indicator.dart';
 
 import '../../components/pie_chart_like_dislike.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:piring_harapan/penerima/home_section/home_page.dart';
+import 'package:piring_harapan/penerima/profile_section/profile_section_view.dart';
 import 'package:piring_harapan/penerima/review_section/review_page.dart';
 import 'package:piring_harapan/penerima/notification_section/notification_page.dart';
-import 'package:piring_harapan/penerima/profile_section/profile_page.dart';
 
 class MainPenerimaView extends StatefulWidget {
   @override
@@ -16,7 +16,7 @@ class _MainPenerimaViewState extends State<MainPenerimaView> {
     HomePage(),
     ReviewSection(),
     NotificationSection(),
-    ProfileSection(),
+    ProfileSectionView(),
   ];
 
   void _onItemTapped(int index) {

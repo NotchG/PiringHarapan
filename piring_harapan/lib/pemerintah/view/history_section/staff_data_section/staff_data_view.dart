@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piring_harapan/pemerintah/view/components/header_navigation.dart';
+import 'package:piring_harapan/common_components/header_navigation.dart';
 import 'package:piring_harapan/pemerintah/view/history_section/staff_data_section/staff_data_details_view.dart';
 
 import 'package:piring_harapan/pemerintah/view/components/common_list_button.dart';
