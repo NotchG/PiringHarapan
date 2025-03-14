@@ -59,9 +59,18 @@ class _StepByStepGuideState extends State<StepByStepGuide> {
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                child: Text(
-                  step["content"],
-                  style: TextStyle(fontSize: 14),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: (step["content"] as List<String>).map((e) => Container(
+                    margin: EdgeInsets.only(bottom: 7),
+                    child: Text(
+                      e,
+                      textAlign: TextAlign.start,
+                      style: TextStyle(
+                          fontSize: 14,
+                      ),
+                    ),
+                  )).toList(),
                 ),
               ),
             SizedBox(height: 8),
