@@ -1,16 +1,20 @@
 # piring_harapan
 
-A new Flutter project.
-
 ## Getting Started
+ Use this account for login (in role selection):
 
-This project is a starting point for a Flutter application.
+    "email": "pemerintah@gmail.com",
+    "password": "pemerintah",
+    "fullName": "User Pemerintah"
 
-A few resources to get you started if this is your first Flutter project:
+    "email": "penerima@gmail.com",
+    "password": "penerima",
+    "fullName": "User penerima"
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    "email": "pemasak@gmail.com",
+    "password": "pemasak",
+    "fullName": "User pemasak"
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    "email": "petani@gmail.com",
+    "password": "petani",
+    "fullName": "User petani"
