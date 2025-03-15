@@ -3,14 +3,20 @@
 A new Flutter project.
 
 ## Getting Started
+Use this for account for login in login (per role one account)
+    "email": "pemerintah@gmail.com",
+    "password": "pemerintah",
+    "fullName": "User Pemerintah"
 
-This project is a starting point for a Flutter application.
+    "email": "penerima@gmail.com",
+    "password": "penerima",
+    "fullName": "User penerima"
 
-A few resources to get you started if this is your first Flutter project:
+    "email": "pemasak@gmail.com",
+    "password": "pemasak",
+    "fullName": "User pemasak"
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    "email": "petani@gmail.com",
+    "password": "petani",
+    "fullName": "User petani"
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
