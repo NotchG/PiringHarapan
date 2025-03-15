@@ -49,9 +49,7 @@ class AiMenuRecommendationPage extends StatelessWidget {
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 8),
-              Expanded(child: StepByStepGuide(
-                  steps: steps
-              )),
+              SizedBox(height: 300, child: StepByStepGuide(steps: steps)),
               SizedBox(height: 16),
               MakeButton(),
               SizedBox(height: 24),

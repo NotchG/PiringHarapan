@@ -4,7 +4,8 @@ import 'package:http/http.dart' as http;
 import '../model/recipe_model.dart';
 
 class AiMenuController {
-  Future<List<Recipe>?> fetchChatCompletion(List<Map<String, String>> messages) async {
+  Future<List<Recipe>?> fetchChatCompletion(
+      List<Map<String, String>> messages) async {
     const String apiUrl = "https://api.groq.com/openai/v1/chat/completions";
     const String apiKey = ""; // Replace with your API key
 
@@ -32,7 +33,8 @@ class AiMenuController {
       if (response.statusCode == 200) {
         Map<String, dynamic> jsonResult = jsonDecode(response.body);
         List<dynamic> result = jsonResult["choices"];
-        List<dynamic> data = jsonDecode(result[0]["message"]["content"])["menu"];
+        List<dynamic> data =
+            jsonDecode(result[0]["message"]["content"])["menu"];
         return data.map((json) => Recipe.fromJson(json)).toList();
       } else {
         print("Error: ${response.statusCode} - ${response.body}");
@@ -46,5 +48,4 @@ class AiMenuController {
       return await fetchChatCompletion(messages);
     }
   }
-
 }
