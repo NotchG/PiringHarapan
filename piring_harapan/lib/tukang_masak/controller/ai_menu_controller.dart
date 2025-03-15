@@ -7,7 +7,7 @@ class AiMenuController {
   Future<List<Recipe>?> fetchChatCompletion(
       List<Map<String, String>> messages) async {
     const String apiUrl = "https://api.groq.com/openai/v1/chat/completions";
-    const String apiKey = "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"; // Replace with your API key
+    const String apiKey = ""; // Replace with your API key
 
     final Map<String, dynamic> requestBody = {
       "messages": messages,
